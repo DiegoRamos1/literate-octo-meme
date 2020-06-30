@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang= 'es' style='height: 100%;'>
+<head>
+    <title>Covid19NewsChile</title>
+    {% load  static %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" >
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+</head>
+<body class="blue lighten-5">   
+  <nav class="black">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Covid19 NewsChile</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'index' %}">Contagios</a></li>
+        <li class="active grey darken-3"><a href="">Autocuidados</a></li>
+        <li><a href="{% url 'Origen' %}">Origen Covid19</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="container">
+      <div class="row text-align: center">
+        <div class="col s12">
+          <h1>¿Cuales son las recomendaciones para cuidarse del Covid19?</h1>
+        </div>
+          <div class="col s6">
+            <h4>Prevenciones</h4>
+            <img src="{% static 'img/img1.jpeg' %}"/>
+          </div>
+          <div class="col s6">
+            <h4>Sintomas</h4>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
