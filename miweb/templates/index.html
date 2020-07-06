@@ -16,6 +16,7 @@
         <li class="active grey darken-3"><a href="">Contagios</a></li>
         <li><a href="{% url 'Autocuidados' %}">Autocuidados</a></li>
         <li><a href="{% url 'Origen' %}">Origen Covid19</a></li>
+        <li><a href="{% url 'fuentes' %}">Fuentes</a></li>
       </ul>
     </div>
   </nav>
@@ -28,6 +29,9 @@
             </h6>
           </div>
           <div>
+<<<<<<< HEAD
+            <h1 style="text-align: center;">Contagios a dia de hoy en Chile</h1>
+=======
             <br>
             <h3 style="text-align: center;">Contagio</h3>
           </div>  
@@ -53,7 +57,33 @@
             </p>
 
           <div align="center"><img src="{% static 'img/coronao.jpg' %}" alt="coroano" width="350" height="200" /><img src="{% static 'img/coronavirus.jpg' %}" alt="coroano" width="350" height="200" /><img src="{% static 'img/vivi.jpeg' %}" alt="coroano" width="350" height="200" /></div>
+>>>>>>> 76fcc08aeb6fda885fa7f7f1677725380e216ff9
       </div>
     </div>
 </body>
+<footer class="page-footer"; style="background-color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Contactanos</h5>
+        <p class="grey-text text-lighten-4">covid19newschile@gmail.com</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Contenido</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="{% url 'index' %}">Contagios</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'Autocuidados' %}">Autocuidados</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'Origen' %}">Origen Covid19</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'fuentes' %}">Fuentes</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2020 Covid19NewsChile
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
 </html>

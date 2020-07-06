@@ -3,6 +3,7 @@
 <head>
     <title>Covid19NewsChile</title>
     {% load  static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" >
     <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
@@ -16,6 +17,7 @@
         <li><a href="{% url 'index' %}">Contagios</a></li>
         <li class="active grey darken-3"><a href="">Autocuidados</a></li>
         <li><a href="{% url 'Origen' %}">Origen Covid19</a></li>
+        <li><a href="{% url 'fuentes' %}">Fuentes</a></li>
       </ul>
     </div>
   </nav>
@@ -30,9 +32,38 @@
           </div>
           <div class="col s6">
             <h4>Sintomas</h4>
+<<<<<<< HEAD
+            <img src="{% static 'img/img2.jpeg' %}" height="1280px"/>
+=======
             <img src="{% static 'img/img2.jpeg' %}" alt="coroano" width="350" height="800" />
+>>>>>>> 76fcc08aeb6fda885fa7f7f1677725380e216ff9
           </div>
       </div>
     </div>
 </body>
+<footer class="page-footer"; style="background-color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Contactanos</h5>
+        <p class="grey-text text-lighten-4">covid19newschile@gmail.com</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Contenido</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="{% url 'index' %}">Contagios</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'Autocuidados' %}">Autocuidados</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'Origen' %}">Origen Covid19</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'fuentes' %}">Fuentes</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2020 Covid19NewsChile
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
 </html>

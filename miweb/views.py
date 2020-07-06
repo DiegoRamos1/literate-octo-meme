@@ -7,3 +7,5 @@ def Origen(request):
     return render(request, "Origen.html")
 def Autocuidado(request):
     return render(request, "Autocuidados.html")
+def fuentes(request):
+    return render(request, "fuentes.html")

@@ -5,4 +5,5 @@ urlpatterns = [
     path('',views.index,name="index"),
     path('Origen',views.Origen,name="Origen"),
     path('Autocuidado',views.Autocuidado,name="Autocuidados"),
+    path('fuentes',views.fuentes,name="fuentes"),
 ]
