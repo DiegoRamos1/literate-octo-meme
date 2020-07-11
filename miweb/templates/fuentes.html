@@ -1,68 +1,50 @@
-<!DOCTYPE html>
-<html lang= 'es' style='height: 100%;'>
-<head>
-    <title>Covid19NewsChile</title>
-    {% load  static %}
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" >
-    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
-</head>
-<body class="blue lighten-5">   
-  <nav class="black">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Covid19 NewsChile</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li ><a href="{% url 'index' %}">Covid19</a></li>
-        <li><a href="{% url 'Autocuidados' %}">Autocuidados</a></li>
-        <li><a href="{% url 'Origen' %}">Origen Covid19</a></li>
-        <li class="active grey darken-3"><a href="">Fuentes</a></li>
-      </ul>
-    </div>
-  </nav>
+{% include 'base.html' %}
+{% load static %}
+{% block container %}
 <body>
-    <ol>
-        <li>https://www.gob.cl/coronavirus/autocuidado/</li>
-        <li>https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses#:~:text=sintomas</li>
-        <li>https://www.gob.cl/coronavirus/?gclid=Cj0KCQjwoaz3BRDnARIsAF1RfLfrL1_yqwyEwj0dNQyIX0UJsLSoymuT7fxAhKYWW_TVCg2TtPcOBBEaAnXyEALw_wcB</li>
-        <li>https://www.dw.com/es/rusia-registra-un-primer-f%C3%A1rmaco-antiviral-contra-la-covid-19/a-53639490</li>
-        <li>https://www.bbc.com/mundo/noticias-51738376</li>
-    </ol>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
+  <ol>
+    <li>https://www.gob.cl/coronavirus/autocuidado/</li>
+    <li>https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses#:~:text=sintomas</li>
+    <li>https://www.gob.cl/coronavirus/?gclid=Cj0KCQjwoaz3BRDnARIsAF1RfLfrL1_yqwyEwj0dNQyIX0UJsLSoymuT7fxAhKYWW_TVCg2TtPcOBBEaAnXyEALw_wcB</li>
+    <li>https://www.dw.com/es/rusia-registra-un-primer-f%C3%A1rmaco-antiviral-contra-la-covid-19/a-53639490</li>
+    <li>https://www.bbc.com/mundo/noticias-51738376</li>
+  </ol>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
 </body>
 <footer class="page-footer"; style="background-color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Contactanos</h5>
+        <p class="grey-text text-lighten-4">covid19newschile@gmail.com</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Contenido</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="{% url 'index' %}">Contagios</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'Autocuidados' %}">Autocuidados</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'Origen' %}">Origen Covid19</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'fuentes' %}">Fuentes</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Contactanos</h5>
-          <p class="grey-text text-lighten-4">covid19newschile@gmail.com</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Contenido</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="{% url 'index' %}">Contagios</a></li>
-            <li><a class="grey-text text-lighten-3" href="{% url 'Autocuidados' %}">Autocuidados</a></li>
-            <li><a class="grey-text text-lighten-3" href="{% url 'Origen' %}">Origen Covid19</a></li>
-            <li><a class="grey-text text-lighten-3" href="{% url 'fuentes' %}">Fuentes</a></li>
-          </ul>
-        </div>
-      </div>
+    © 2020 Covid19NewsChile
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      © 2020 Covid19NewsChile
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 </html>
+{% endblock %}
